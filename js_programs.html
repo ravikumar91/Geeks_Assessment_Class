@@ -56,11 +56,126 @@
             }
         }
 
+        function palindrome_number(num){
+            let rem = 0;
+            let rev = 0;
+            let tmp = num;
+            while(num!=0){
+                rem = num%10;
+                rev = (rev*10)+rem;
+                num = Math.floor(num / 10);
+            }
+            if(rev == tmp){
+                document.write(tmp+" Is a palindrome number");
+            }else{
+                document.write(tmp+" Is not a palindrome number");
+
+            }
+        }
+
+        function calculator(ch,n1,n2){
+            switch(ch){
+                case '+':
+                    {
+                        document.write("Sum of "+n1+ " and "+n2+ " is = "+(n1+n2));
+                        break;
+                    }
+                case '-':
+                    {
+                        document.write("Subtraction of "+n1+ " and "+n2+ " is = "+(n1-n2));
+                        break;
+                    }
+                case '*':
+                    {
+                        document.write("Multiplication of "+n1+ " and "+n2+ " is = "+(n1*n2));
+                        break;
+                    }
+                case '/':
+                    {
+                        document.write("Division of "+n1+ " and "+n2+ " is = "+(Math.floor(n1/n2)));
+                        break;
+                    }        
+                default:
+                    document.write("Please eneter valid choice");
+            }
+        }
+
+        function week_day(ch){
+            switch(ch){
+                case 'Sunday':
+                    {
+                        document.write("Entered day is Sunday ");
+                        break;
+                    }
+                case 'Monday':
+                    {
+                        document.write("Entered day is Monday ");
+                        break;
+                    }
+                case 'Tuesday':
+                    {
+                        document.write("Entered day is Tuesday ");
+                        break;
+                    }
+                case 'Wednesday':
+                    {
+                        document.write("Entered day is Wednesday ");
+                        break;
+                    } 
+                case 'Thursday':
+                    {
+                        document.write("Entered day is Thursday ");
+                        break;
+                    }  
+                case 'Friday':
+                    {
+                        document.write("Entered day is Friday ");
+                        break;
+                    }  
+                case 'Saturday':
+                    {
+                        document.write("Entered day is Saturday ");
+                        break;
+                    } 
+                default:
+                    {
+                        document.write("Please enter valid day of the week");
+                        break;
+                    }       
+            }
+        }
+
+        function maximum_of_three_no(n1,n2,n3)
+        {
+            let max = 0;
+            if(n1>=n2 && n1>=n3){
+                max = n1;
+            }else if(n2>=n1 && n2>=n3){
+                max = n2
+            }else{
+                max=n3;
+            }
+            document.write("Highest number is "+max);
+        }
+
+        function canVote(age){
+            if(age >=18){
+                document.write("You are elligible to vote");
+            }else{
+                document.write("You are not elligible to vote");
+            }
+        }
         // even_odd(4);
         // negative_positive_number(-5);
         // check_leapyear(2021);
         // fibonacci_series(10); 
         // vowel_consonant('o');
+        // palindrome_number(5150);
+        // calculator('+',4,5);
+        // week_day('Monday');
+        // maximum_of_three_no(11,3,9);
+        // canVote(4);
+        
 
 
 
