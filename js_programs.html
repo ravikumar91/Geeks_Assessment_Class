@@ -9,10 +9,8 @@
         {
             if(num%2==0){
                 document.write(num+ " Is a even number");
-                // console.log(num+" Is a even number");
             }else{
                 document.write(num +" Is a odd number");
-                // console.log(num+" Is a odd number");
             }
         }
 
@@ -21,15 +19,50 @@
         {
             if(num>0){
                 document.write(num+ " Is a positive number");
-                // console.log(num+" Is a positive number");
             }else{
                 document.write(num +" Is a negative number");
-                // console.log(num+" Is a negative number");
+            }
+        }
+
+        function check_leapyear(year){
+            if((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
+                document.write(year + " Is a leap year");
+            }else{
+                document.write(year + " Is not a leap year");
+            }
+        }
+
+        function fibonacci_series(term){
+            let a=0;
+            let b=1;
+            let c=0;
+            let sum=0;
+            document.write(a);
+            document.write(" "+b);
+            for(let i=0;i<term-2;i++){
+                c=a+b;
+                document.write(" "+c);
+                a=b;
+                b=c;
+            }
+        } 
+
+        function vowel_consonant(ch){
+
+            if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u'){
+                document.write(ch+" Is a Vowel")
+            }else{
+                document.write(ch+" Is a consonant")
             }
         }
 
         // even_odd(4);
         // negative_positive_number(-5);
+        // check_leapyear(2021);
+        // fibonacci_series(10); 
+        // vowel_consonant('o');
+
+
 
     </script>
 
