@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box implementation</title>
+    <style>
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+    
+    .flex_container{
+        background-color: aquamarine;
+        margin: 20px auto;
+        width: 700px;
+        height:600px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: column; */
+        /* justify-content:start;
+        align-items: start; */
+        gap: 4px;
+        flex-wrap: wrap;
+        
+
+    }
+    .common_style{
+        width: 110px;
+        height: 110px;
+        text-align: center;
+        font-size: 22px;
+        padding: 20px;
+      }
+
+    .flex_item_1{
+        background: linear-gradient(45deg, red, blue);
+    }
+    .flex_item_2{
+        background: linear-gradient(135deg, orange 60%, cyan);
+    }
+    .flex_item_3{
+        background: linear-gradient(90deg in oklab, blue, red);
+    }
+    .flex_item_4{
+        background: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+        
+    }
+    </style>
+</head>
+<body>
+    
+        <div class="flex_container">
+            <div class="flex_item_1 common_style">Item 1</div>
+            <div class="flex_item_2 common_style">Item 2</div>
+            <div class="flex_item_3 common_style">Item 3</div>
+            <div class="flex_item_4 common_style">Item 4</div>
+
+        </div>
+    
+</body>
+</html>

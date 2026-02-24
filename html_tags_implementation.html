@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags implementation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container
+        {
+            width: 600px;
+            height: auto;
+            margin: 20px auto;
+            background-color: hsla(0, 27%, 96%, 0.452) ;
+            border: ipx solid lightgray;
+        }
+        .center{
+            text-align: center;
+        }
+        .img_video{
+            width: 600px;
+            height: auto;
+        }
+        .img{
+            float: left;
+        }
+        .video{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="center">Ravi Kumar</h1>
+        </div>
+        <hr>
+        <div>
+            <pre>
+                Suraj Vihar Colony, Garhi Dadri, G.B Nagar (U.P)
+                Mob: xxxxxxxxx, email: xxxxx@xxx.com
+            </pre>
+        </div>
+        <hr>
+
+     <div class="img_video">
+        <div class="img">
+            <img src="images/ravi_pic.jpg" alt="Profile photo" width="200" height="300">
+        </div>
+        <div class="video" style="margin-left: 5px;">
+            <video controls muted width="350" height="300">
+                <source src="vid.mp4" type="video/mp4">
+                your browser does not support the format.
+            </video>
+        </div>
+     </div>
+        <hr>
+
+     <div class="skill">
+        <h3>Skills Section</h3>
+        <ul>
+            <li>Php</li>
+            <li>MySql</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JQuery</li>
+            <li>Ajax</li>
+            <li>JAVA</li>
+        </ul>
+     </div> 
+    <hr>
+
+
+     <div class="skill">
+        <h3>Subjects We are going to read</h3>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVA SCRIPT</li>
+            <li>EXPRESS</li>
+            <li>NODE JS</li>
+        </ol>
+     </div> 
+
+     <div class="skill">
+        <h3>Subjects We are going to read</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>- Need to lern for web page designing.</dd>
+            <dt>CSS</dt>
+            <dd>- Need to lern for web page presentation, styling web page.</dd>
+            <dt>JAVASCRIPT</dt>
+            <dd>- Need to lern for INTERACTIVE WEB PAGE DESIGNING.</dd>
+            </dl>
+     </div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment Div, Positions</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 500px;
+            height :500px;
+            background: linear-gradient(90deg,rgba(73, 123, 143, 1) 0%, rgba(68, 166, 143, 1) 28%, rgba(71, 170, 142, 1) 31%, rgba(74, 176, 140, 1) 35%, rgba(79, 185, 137, 1) 41%, rgba(85, 196, 134, 1) 48%, rgba(87, 199, 133, 1) 50%, rgba(106, 202, 127, 1) 56%, rgba(116, 203, 123, 1) 60%, rgba(144, 207, 114, 1) 69%, rgba(237, 221, 83, 1) 100%);;
+            position:relative;
+            margin: 20px auto;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            display: grid;
+            place-items: center;
+            position: absolute;
+        }
+        .child_div_1{
+            background-color: #FF69B4;
+            text-align: center;
+            top: 0; 
+            left: 0; 
+        }
+         .child_div_2{
+            background-color: rgb(75, 60, 129);
+            text-align: center;
+            top:0;
+            right: 0; 
+        }
+         .child_div_3{
+            background-color: rgb(37, 147, 211);
+            text-align: center;
+            bottom: 0;
+            right: 0;
+
+        }
+         .child_div_4{
+            background-color: rgb(100, 99, 141);
+            text-align: center;
+            bottom: 0;
+            left:0;
+
+        }
+         .child_div_5{
+            background-color: rgb(184, 211, 65);
+            text-align: center;
+            left: 200px;
+            top: 200px; 
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child_div_1 child">Item 1</div>
+        <div class="child_div_2 child">Item 2</div>
+        <div class="child_div_3 child">Item 3</div>
+        <div class="child_div_4 child">Item 4</div>
+        <div class="child_div_5 child">Item 5</div>
+    </div>
+</body>
+</html>
